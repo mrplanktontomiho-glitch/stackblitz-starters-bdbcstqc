@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Little World 💗</title>
+  <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <p class="eyebrow">A LITTLE PLACE FOR US</p>
+      <h1>Our Little World ♡</h1>
+      <p>Every little thing here reminds me of you.</p>
+    </header>
+
+    <!-- LOVE LETTER ENVELOPE -->
+    <section class="letter-section">
+      <button class="envelope" id="envelope" aria-label="Open love letter">
+        <span class="envelope-back"></span>
+        <span class="letter-paper">
+          <span class="letter-title">To My Favorite Person 💌</span>
+          <span class="letter-preview">You make my world more beautiful...</span>
+        </span>
+        <span class="envelope-flap"></span>
+        <span class="envelope-front"></span>
+        <span class="envelope-heart">♥</span>
+      </button>
+      <p class="hint" id="envelopeHint">tap the envelope to open it</p>
+
+      <article class="letter-content" id="letterContent" hidden>
+        <p class="eyebrow">A LETTER FROM MY HEART</p>
+        <h2>Dear My Love, ♡</h2>
+        <p>
+          If I could give you one thing in this world, I would give you
+          the ability to see yourself through my eyes. You would see
+          how special you are, how much happiness you bring, and why
+          you mean so much to me.
+        </p>
+        <p>
+          Thank you for being part of my life. No matter how ordinary
+          a day may seem, it becomes more beautiful when I get to share
+          it with you.
+        </p>
+        <p class="signature">Always yours, with love. 💗</p>
+        <button class="small-button" id="closeLetter">Close letter</button>
+      </article>
+    </section>
+
+    <!-- PHOTO MEMORIES -->
+    <section class="memories-section">
+      <p class="eyebrow">OUR MOMENTS</p>
+      <h2>Little Memories 📸</h2>
+      <p class="section-note">Every picture holds a piece of our story.</p>
+
+      <label class="upload-button">
+        + Add Our Photos
+        <input id="photoUpload" type="file" accept="image/*" multiple hidden>
+      </label>
+
+      <div class="photo-grid" id="photoGrid">
+        <label class="photo-card photo-placeholder">
+          <span>＋</span>
+          <span>Add your first memory</span>
+          <input type="file" accept="image/*" class="single-photo" hidden>
+        </label>
+        <label class="photo-card photo-placeholder">
+        <span>＋</span>
+        <span>Add your first memory</span>
+        <input type="file" accept="image/*" class="single-photo" hidden>
+      </label>
+      <label class="photo-card photo-placeholder">
+      <span>＋</span>
+      <span>Add your first memory</span>
+      <input type="file" accept="image/*" class="single-photo" hidden>
+    </label>
+    <label class="photo-card photo-placeholder">
+    <span>＋</span>
+    <span>Add your first memory</span>
+    <input type="file" accept="image/*" class="single-photo" hidden>
+  </label>
+        <label class="photo-card photo-placeholder">
+          <span>＋</span>
+          <span>A favorite moment</span>
+          <input type="file" accept="image/*" class="single-photo" hidden>
+        </label>
+        <label class="photo-card photo-placeholder">
+          <span>＋</span>
+          <span>Another sweet memory</span>
+          <input type="file" accept="image/*" class="single-photo" hidden>
+        </label>
+      </div>
+    </section>
+
+    <!-- VOICE MESSAGE -->
+    <section class="media-section">
+      <p class="eyebrow">A MESSAGE FOR YOU</p>
+      <h2>Listen to My Heart 🎧</h2>
+      <p class="section-note">A little voice message, just for you.</p>
+
+      <div class="audio-card">
+        <div class="media-icon">♫</div>
+        <div class="media-details">
+          <strong>My Voice Message</strong>
+          <span id="voiceStatus">Choose your recorded audio below</span>
+        </div>
+        <label class="upload-icon" title="Add a voice recording">
+          +
+          <input id="voiceUpload" type="file"
+            accept="audio/*" hidden>
+        </label>
+      </div>
+
+      <audio id="voicePlayer" controls hidden></audio>
+    </section>
+
+    <!-- OUR SONG -->
+    <section class="media-section song-section">
+      <p class="eyebrow">OUR SONG</p>
+      <h2>A Song That Reminds Me of You 🎵</h2>
+      <p class="section-note">
+        Add the song that will always remind you of each other.
+      </p>
+
+      <div class="audio-card">
+        <div class="media-icon">♡</div>
+        <div class="media-details">
+          <strong>Our Special Song</strong>
+          <span id="songStatus">Choose your song below</span>
+        </div>
+        <label class="upload-button compact">
+          Add a Song
+          <input id="songUpload" type="file"
+            accept="audio/*" hidden>
+        </label>
+      </div>
+
+      <audio id="songPlayer" controls hidden></audio>
+    </section>
+
+    <footer>
+      Made with love, just for you. Always. ♡
+    </footer>
+  </main>
+
+  <script src="page2.js"></script>
+</body>
+</html>
+
